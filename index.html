@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,14 +8,24 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-      <div id="timer">00:00:00</div>
-        <div class="options">
-         <button id="start">Start</button>
-         <button id="stop">Stop</button>
-         <button id="reset">Reset</button>
-     </div>
-    </div>
+    <main class="container">
+        <section id="input-section">
+            <label for="hours">시간</label>
+            <input type="number" id="hours" placeholder="시간" min="0">
+            <label for="minutes">분</label>
+            <input type="number" id="minutes" placeholder="분" min="0">
+            <label for="seconds">초</label>
+            <input type="number" id="seconds" placeholder="초" min="0">
+        </section>
+        <section id="timer-section">
+            <div id="timer">00:00:00</div>
+        </section>
+        <section class="options">
+            <button id="start">Start</button>
+            <button id="stop">Stop</button>
+            <button id="reset">Reset</button>
+        </section>
+    </main>
     <script type="module" src="script.js"></script>
 </body>
 </html>
